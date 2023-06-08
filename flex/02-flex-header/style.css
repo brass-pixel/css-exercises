@@ -3,6 +3,34 @@
   background: papayawhip;
 }
 
+/*
+.header{
+  display:flex;
+  justify-content: space-evenly;
+}
+.header *{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links, .right-links {
+  margin: 15px;
+}
+.left-links{
+  justify-content: flex-start;
+  flex:1;
+}
+
+.logo {
+  justify-content: center;
+  margin: 10px;
+}
+
+.right-links{
+  justify-content: flex-end;
+  flex:1;
+}
+*/
 .logo {
   font-size: 48px;
   font-weight: 900;
@@ -11,9 +39,12 @@
   padding: 4px 32px;
 }
 
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+ /* padding: 0;
+  gap: 10px;*/
 }
 
 a {
@@ -22,4 +53,21 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+
+/* SOLUTION */
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
